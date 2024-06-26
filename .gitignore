@@ -1,0 +1,7 @@
+.idea/
+.vscode/
+.env
+dist/
+screenshot.jpg
+package.lock.json
+node_modules/

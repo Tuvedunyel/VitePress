@@ -1,0 +1,9 @@
+@use 'base';
+@use 'abstracts';
+@use 'components';
+@use 'layouts';
+
+
+iframe {
+  max-width: 100% !important;
+}

@@ -1,0 +1,19 @@
+body {
+  --background: #0f172a;
+  --primary: #f8fafc;
+  --secondary: #94a3b8;
+  --purple: #818cf8;
+  --blue: #0ea5e9;
+  --red: #f472b6;
+  --dark-blue: #3b82f6;
+  --gray: #64748b;
+}
+
+body.light {
+  --background: #e7e8ed;
+  --primary: #0f172a;
+  --secondary: #64748b;
+  --purple: #6366f1;
+  --red: #ec4899;
+  --gray: #f1f5f9;
+}
