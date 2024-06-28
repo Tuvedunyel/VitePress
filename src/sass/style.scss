@@ -3,6 +3,10 @@
 @use 'components';
 @use 'layouts';
 
+// We use the `as` keyword to rename the imported module to avoid conflicts with the other components file.
+@use 'vendors/components' as vendorsComponents;
+@use 'vendors';
+
 
 iframe {
   max-width: 100% !important;

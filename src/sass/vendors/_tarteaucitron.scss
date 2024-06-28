@@ -1,0 +1,35 @@
+/**
+ * TarteAuCitron Root
+ */
+#tarteaucitronRoot {
+  width: 100%;
+  
+  font-family: Helvetica, Avenir, Arial, sans-serif;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/**
+ * TarteAuCitron general styles
+ */
+#tarteaucitron ul {
+  list-style: none;
+  
+  padding-left: 0;
+}
+
+/**
+ * TarteAuCitron Utility Classes
+ */
+// Prevent scroll on body when TaC modal is opened
+.tarteaucitron-modal-open {
+  overflow: hidden;
+}
+// TaC visibilty classes
+.tarteaucitron-display-block {
+  display: block;
+}
+.tarteaucitron-display-none {
+  display: none;
+}

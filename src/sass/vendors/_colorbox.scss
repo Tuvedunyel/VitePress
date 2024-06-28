@@ -1,0 +1,140 @@
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden; -webkit-transform: translate3d(0,0,0);}
+#cboxWrapper {max-width:none;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/*
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay {
+  background: var(--background);
+  opacity: 0.9;
+  filter: alpha(opacity = 90);
+}
+#colorbox{
+  outline:0;
+}
+#cboxContent {
+  margin-bottom: 36px;
+  overflow:visible;
+  background:#000;
+}
+.cboxIframe {
+  background:#fff;
+}
+#cboxError {
+  padding:50px;
+  border:1px solid #ccc;
+}
+#cboxLoadedContent {
+  background:#000;
+  padding:1px;
+}
+#cboxLoadingGraphic {
+  //background-image: url('../svg/load-white.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 50px;
+}
+#cboxLoadingOverlay {
+  background:#000;
+}
+#cboxTitle {
+  position:absolute;
+  bottom: -30px;
+  left: 176px;
+  color: var(--primary);
+}
+#cboxCurrent {
+  position: absolute;
+  bottom: -30px;
+  left: 115px;
+  
+  color: var(--primary);
+}
+
+/* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+#cboxPrevious,
+#cboxNext,
+#cboxSlideshow,
+#cboxClose {
+  position: absolute;
+  bottom: -36px;
+  
+  border: 2px solid var(--primary);
+  border-radius: 18px;
+  background-color: rgba(0,0,0,0);
+  background-size: auto 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  text-indent: -9999px;
+  
+  width: 33px;
+  height: 33px;
+}
+
+/* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+#cboxPrevious:active,
+#cboxNext:active,
+#cboxSlideshow:active,
+#cboxClose:active {
+  outline:0;
+}
+
+#cboxPrevious {
+  //background-image: url('../svg/chevron-left-white.svg');
+  left: 0;
+}
+#cboxPrevious:hover {
+  background-color: rgba(var(--primary), 0.4);
+}
+#cboxNext {
+  //background-image: url('../svg/chevron-left-white.svg');
+  transform: rotate(180deg);
+  left: 36px;
+}
+#cboxNext:hover {
+  background-color: rgba(var(--primary), 0.4);
+}
+#cboxClose {
+  //background-image: url('../svg/close-white.svg');
+  background-size: auto 16px;
+  right:0;
+}
+#cboxClose:hover {
+  background-color: rgba(var(--primary), 0.4);
+}
+.cboxSlideshow_on #cboxNext,
+.cboxSlideshow_off #cboxNext {
+  left: 72px;
+}
+.cboxSlideshow_on #cboxSlideshow {
+  left: 36px;
+  //background-image: url('../svg/pause-white.svg');
+}
+#cboxSlideshow:hover {
+  background-color: rgba(var(--primary), 0.4);
+}
+.cboxSlideshow_off #cboxSlideshow {
+  left: 36px;
+  // background-image: url('../../assets/svg/play-white.svg');
+}
+
