@@ -18,7 +18,7 @@
             </div>
           </div>
 				<?php endwhile; ?>
-			<?php endif; ?>
+			<?php endif; ?> 
     </section>
   </div>
 </main>

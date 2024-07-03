@@ -1,31 +1,30 @@
-import { defineConfig } from "vite";
-import liveReload from "vite-plugin-live-reload";
-import { resolve } from "path";
-import fs from "fs";
-import getThemeDir from './js-helpers/getThemeDir.mjs'
+/* eslint-disable unicorn/prefer-module */
+import { defineConfig } from 'vite'
+import liveReload from 'vite-plugin-live-reload'
+import { resolve } from 'node:path'
+import fs from 'node:fs'
+import getThemeDir from './js-helpers/get_theme_dir.mjs'
 
 // https://vitejs.dev/config
 export default defineConfig({
-  plugins: [
-    liveReload(__dirname + "/**/*.php"),
-  ],
+  plugins: [liveReload(__dirname + '/**/*.php')],
 
   // config
-  root: "",
-  base: process.env.NODE_ENV === "development" ? `/` : `/wp-content/themes/${getThemeDir()}/dist/`,
+  root: '',
+  base: process.env.NODE_ENV === 'development' ? `/` : `/wp-content/themes/${getThemeDir()}/dist/`,
 
   build: {
-    outDir: resolve(__dirname, "./dist"),
+    outDir: resolve(__dirname, './dist'),
     emptyOutDir: true,
 
     manifest: true,
 
     // esbuild target
-    target: "es2018",
+    target: 'es2018',
 
     rollupOptions: {
       input: {
-        main: resolve(__dirname + "/script.ts"),
+        main: resolve(__dirname + '/script.ts'),
       },
 
       /*
@@ -49,7 +48,7 @@ export default defineConfig({
     https: false,
 
     hmr: {
-      host: "localhost",
+      host: 'localhost',
       //port: 443
     },
   },
@@ -57,4 +56,4 @@ export default defineConfig({
   resolve: {
     alias: {},
   },
-});
+})

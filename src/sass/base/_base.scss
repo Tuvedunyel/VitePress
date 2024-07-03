@@ -1,9 +1,7 @@
 /* Set root font-size @10px equivalent */
 html {
   font-size: 0.625em; /* fallback IE8+ */
-  font-size: calc(
-      1em * 0.625
-  ); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+  font-size: calc(1em * 0.625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
   scroll-behavior: smooth;
 }
 
@@ -21,7 +19,7 @@ html {
 
 /* Set core body defaults */
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   min-height: 100vh;
   font-size: 1.7rem;
   text-rendering: optimizeSpeed;
@@ -85,7 +83,7 @@ select {
 /* Set cursor pointer */
 label[for],
 button,
-input[type="submit"],
+input[type='submit'],
 select {
   cursor: pointer;
 }
@@ -125,7 +123,7 @@ address {
 }
 
 /* Phone links active only under 36em (576px) */
-a[href^="tel"] {
+a[href^='tel'] {
   white-space: nowrap;
   pointer-events: none;
   text-decoration: none;
@@ -133,7 +131,7 @@ a[href^="tel"] {
 }
 
 @media (max-width: 36em) {
-  a[href^="tel"] {
+  a[href^='tel'] {
     pointer-events: auto;
     text-decoration: underline;
   }
@@ -144,9 +142,9 @@ a[href^="tel"] {
   a {
     text-decoration: underline;
   }
-  
-  a[href]:not([href^="#"])::after {
-    content: "(" attr(href) ")";
+
+  a[href]:not([href^='#'])::after {
+    content: '(' attr(href) ')';
   }
 }
 

@@ -1,3 +1,5 @@
 @mixin mediaquery($media) {
-  @media screen and (min-width: $media) { @content; }
+  @media screen and (min-width: $media) {
+    @content;
+  }
 }

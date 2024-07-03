@@ -3,11 +3,11 @@
  */
 #tarteaucitronAlertSmall {
   display: none;
-  
+
   position: fixed;
   right: 0;
   z-index: 1099;
-  
+
   padding: 0;
 }
 .tarteaucitronAlertSmallTop {
@@ -20,7 +20,7 @@
 #tarteaucitronCookiesNumber {
   vertical-align: top;
   display: inline-block;
-  
+
   padding: 0 10px;
 }
 // TaC small alert cookies list wrapper
@@ -28,9 +28,9 @@
   width: 100%;
   max-width: 500px;
   max-height: 70%;
-  
+
   display: none;
-  
+
   position: fixed;
   right: 0;
 }
@@ -46,21 +46,21 @@
 // TaC small alert cookies list left column
 #tarteaucitronCookiesList .tarteaucitronCookiesListLeft {
   width: 50%;
-  
+
   display: inline-block;
 }
 // TaC small alert cookies list right column
 #tarteaucitronCookiesList .tarteaucitronCookiesListRight {
   width: 30%;
-  
+
   vertical-align: top;
   display: inline-block;
-  
+
   margin-left: 10%;
 }
 // TaC small alert display modal button
 #tarteaucitronAlertSmall #tarteaucitronManager {
   display: inline-block;
-  
+
   padding: 8px 10px 8px;
 }

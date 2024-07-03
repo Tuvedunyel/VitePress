@@ -2,7 +2,7 @@
   width: fit-content;
   height: fit-content;
   position: relative;
-  
+
   button {
     background: transparent;
     border: 0;
@@ -10,25 +10,25 @@
     border-top-left-radius: 24px;
     border-bottom-left-radius: 24px;
     padding: 0.5rem 0.5rem 0.5rem 1rem;
-    
+
     svg {
       stroke: var(--blue);
       transition: none;
     }
-    
+
     &:hover {
       background: var(--gray);
-      
+
       svg {
         stroke: var(--red);
       }
     }
   }
-  
+
   svg {
     stroke: var(--red);
   }
-  
+
   .other-themes {
     width: fit-content;
     height: fit-content;
@@ -44,14 +44,13 @@
     gap: 0.5rem;
     align-items: center;
     justify-content: center;
-    
+
     li {
       cursor: pointer;
     }
-    
+
     &.show {
       display: flex;
     }
   }
-  
 }

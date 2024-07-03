@@ -1,25 +1,23 @@
-import fs from 'fs'
-import { fileURLToPath } from 'url'
-import path from 'path'
+import fs from 'node:fs'
+import { fileURLToPath } from 'node:url'
+import path from 'node:path'
 import { favicons } from 'favicons'
 
-const __filename = fileURLToPath(import.meta.url)
-const __dirname = path.dirname(__filename)
+const fileName = fileURLToPath(import.meta.url)
+const dirName = path.dirname(fileName)
 
 /**
  * Get config from json file !
  * @returns object
  */
 const getconfig = () => {
-  return JSON.parse(
-    fs.readFileSync(`${__dirname}/../config/favicon.json`, 'utf8'),
-  )
+  return JSON.parse(fs.readFileSync(`${dirName}/../config/favicon.json`, 'utf8'))
 }
 
 // find theme dir name
 export function getThemDir() {
-  const _path = process.cwd().split('/')
-  return _path[_path.length - 1]
+  const themPath = process.cwd().split('/')
+  return themPath[themPath.length - 1]
 }
 
 const config = await getconfig()
@@ -31,7 +29,7 @@ const source = config.source
 // directory for build
 const target = `./${iconDir}/`
 // php file to include to head
-const phpHead = `${__dirname}/../inc/pwa_head.php`
+const phpHead = `${dirName}/../inc/pwa_head.php`
 // tag filter to remove
 const removeList = [
   'mobile-web-app-capable',
@@ -117,7 +115,7 @@ try {
     add_action('wp_head', function () {
     echo '${head.join('')}';
     });
-  `,
+  `
   )
 } catch (error) {
   console.log(error.message)

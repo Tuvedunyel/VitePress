@@ -13,20 +13,20 @@
 .menu-toggler__line {
   position: absolute;
   top: 9px;
-  
+
   height: 2px;
   width: 100%;
-  
+
   background-color: black;
-  
+
   transition:
-      top 0.15s 0.15s,
-      transform 0.15s;
+    top 0.15s 0.15s,
+    transform 0.15s;
   &:first-of-type {
     top: 0;
     transition:
-        top 0.15s 0.15s,
-        transform 0.15s;
+      top 0.15s 0.15s,
+      transform 0.15s;
   }
   &:last-of-type {
     top: 18px;
@@ -39,14 +39,14 @@
     top: 16px;
     transform: rotate(-45deg);
     transition:
-        top 0.15s,
-        transform 0.15s 0.15s;
+      top 0.15s,
+      transform 0.15s 0.15s;
     &:first-of-type {
       top: 16px;
       transform: rotate(45deg);
       transition:
-          top 0.15s,
-          transform 0.15s 0.15s;
+        top 0.15s,
+        transform 0.15s 0.15s;
     }
   }
 }

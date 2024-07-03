@@ -11,7 +11,7 @@
 
 .site-header__top-menu .menu-item > a {
   font-size: 1.4rem;
-  
+
   &:hover,
   &:focus {
     text-decoration: underline;
@@ -24,7 +24,7 @@
     justify-content: flex-end;
     align-items: center;
     padding: 11px 40px;
-    background:  linear-gradient(to right, rgba(255,255,255,1) 10%,rgba(226,226,226,1) 80%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 10%, rgba(226, 226, 226, 1) 80%);
   }
   .site-header__top-menu .header__nav {
     width: auto;
