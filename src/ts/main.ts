@@ -1,3 +1,9 @@
+// Lightbox
+// import { Lightbox } from '#components/lightbox'
+
+// Accordion
+// import { Accordion } from '#components/accordion'
+
 import setColorScheme from '#components/colorScheme'
 
 const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)') ? 'dark' : 'light'

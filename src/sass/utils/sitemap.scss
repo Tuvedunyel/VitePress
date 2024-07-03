@@ -1,0 +1,28 @@
+.wsp-container {
+  h2 {
+    color: $black;
+  }
+  ul {
+    li {
+      margin: 2px 0;
+    }
+    a {
+      display: inline-block;
+      padding: 2px 0;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+  ul:not(.children) {
+    & > li {
+      & > a {
+        font-size: 1.7remrem;
+      }
+    }
+  }
+  ul.children {
+    margin: 8px 0;
+  }
+}

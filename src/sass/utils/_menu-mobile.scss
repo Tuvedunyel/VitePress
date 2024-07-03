@@ -1,0 +1,168 @@
+@media screen and (max-width: 1299px) {
+  .header__nav-wrapper {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 12;
+    padding: 3.2rem;
+
+    flex-direction: column-reverse;
+    justify-content: start;
+
+    width: 0;
+    height: 100vh;
+
+    overflow: hidden;
+    visibility: hidden;
+
+    transition: all 200ms ease-in;
+
+    &.menu--opened {
+      display: flex;
+
+      width: calc(400px - 6.4rem);
+
+      overflow: scroll;
+      visibility: visible;
+
+      background-color: white;
+
+      transition: all 200ms ease-in;
+      & + .header-nav__overlay {
+        opacity: 1;
+        visibility: visible;
+        transition: all 150ms ease-in;
+      }
+    }
+  }
+
+  #main-menu {
+    list-style: none;
+    color: $black;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 18.75px;
+    padding: 0;
+
+    li::after {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background: #f8f8f8;
+      display: block;
+      margin-block: 1.6rem;
+    }
+  }
+
+  #secondary-menu {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 0;
+    margin-block: 0;
+
+    li {
+      width: 100%;
+    }
+
+    a {
+      width: 100%;
+      color: white;
+      font-size: 1.6rem;
+      font-weight: 400;
+
+      p {
+        margin: 0;
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        border-radius: 3px;
+        padding: 8px 8px 8px 13px;
+        transition: 0.3s ease-out;
+
+        &.noir {
+          background: $black;
+
+          &:hover {
+            background: black;
+          }
+        }
+
+        &.bleu {
+          background: $primary;
+
+          &:hover {
+            background: $primaryDarken;
+          }
+        }
+
+        &.orange {
+          background: $secondary;
+
+          &:hover {
+            background: $secondaryDarken;
+          }
+        }
+
+        &.rouge {
+          background: $tertiary;
+
+          &:hover {
+            background: $tertiaryDarken;
+          }
+        }
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .hover-img {
+        display: none;
+      }
+
+      &:hover {
+        .hover-img {
+          display: flex;
+        }
+
+        .init-img {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .header-nav__overlay {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+
+    overflow: hidden;
+    visibility: hidden;
+
+    opacity: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgba($black, 0.65);
+
+    transition: all 150ms ease-in;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header__nav-wrapper {
+    &.menu--opened {
+      width: calc(100% - 6.4rem);
+    }
+  }
+}

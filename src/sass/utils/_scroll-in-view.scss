@@ -1,0 +1,26 @@
+// General
+.scroll-in-view:not(.no-anim) {
+  opacity: 0;
+}
+.scroll-in-view--slide-x {
+  transform: translateX(-80px);
+}
+.scroll-in-view--slide-x2 {
+  transform: translateX(80px);
+}
+.scroll-in-view--slide-y {
+  transform: translateY(80px);
+}
+.scroll-in-view--slide-y-small {
+  transform: translateY(40px);
+}
+
+// Homepage
+.scroll-in-view--home-1 {
+  transform: translateY(-120px) scale(0.9);
+}
+
+// Product family template page
+.scroll-in-view--product-presentation-img {
+  transform: rotate(-6deg) scale(1.2);
+}

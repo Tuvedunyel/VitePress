@@ -1,0 +1,56 @@
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: 'Crimson Text', serif;
+  line-height: 2rem;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 2px;
+    background: $secondary;
+    margin-top: 1.6rem;
+  }
+
+  @include mediaquery($xsmall) {
+    font-size: 2.8rem;
+    line-height: 2.735rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.954rem;
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 2px;
+    background: $primary;
+    margin-top: 1.6rem;
+  }
+
+  @include mediaquery($xsmall) {
+    font-size: 2.4rem;
+    line-height: 23.45px;
+  }
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 17.58px;
+
+  @include mediaquery($xsmall) {
+    font-size: 1.8rem;
+  }
+}
+
+.is-404 h2 {
+  width: fit-content;
+  margin-inline: auto;
+}

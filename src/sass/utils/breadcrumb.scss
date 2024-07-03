@@ -1,0 +1,23 @@
+.breadcrumb {
+  display: block;
+  margin-block: 3rem 3.2rem;
+}
+
+#breadcrumbs span {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 700;
+  color: #8b8b8b;
+}
+
+#breadcrumbs a {
+  font-weight: 400;
+  font-style: italic;
+  color: #8b8b8b;
+}
+
+@include mediaquery($medium) {
+  .breadcrumb {
+    margin-block: 4.7rem 3.7rem;
+  }
+}
