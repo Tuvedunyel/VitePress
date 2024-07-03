@@ -18,5 +18,5 @@ Ce thème WordPress permet de compiler les assets (TS, SASS, ...) avec ViteJS.
 
 ### Changer de version JS
 
-Ce thème utilise de base typescript, mais vous pouvez changer pour du javascript en modifiant le fichier `vite.config.js` et le fichier `/inc/inc.vite.php` puis, en remplaçant 
+Ce thème utilise de base typescript, mais vous pouvez changer pour du javascript en modifiant le fichier `vite.config.js` et le fichier `/inc/inc.vite.php` puis, en remplaçant
 les fichiers `*.ts` par `*.js`.

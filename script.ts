@@ -1,2 +1,2 @@
-import "#sass/style";
-import "#ts/main";
+import '#sass/style'
+import '#ts/main'
