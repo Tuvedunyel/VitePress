@@ -4,7 +4,7 @@
 // Accordion
 // import { Accordion } from '#components/accordion'
 
-import setColorScheme from '#components/colorScheme'
+import setColorScheme from '#ts/components/color_scheme'
 
 const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)') ? 'dark' : 'light'
 const themeButton = document.querySelector('#theme-handler') as HTMLButtonElement
