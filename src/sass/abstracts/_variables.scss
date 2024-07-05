@@ -18,10 +18,8 @@ body.light {
   --gray: #f1f5f9;
 }
 
-:root {
-  --xsmall: 620px;
-  --small: 768px;
-  --medium: 992px;
-  --large: 1200px;
-  --xlarge: 1400px;
-}
+$xsmall: 620px;
+$small: 768px;
+$medium: 992px;
+$large: 1200px;
+$xlarge: 1400px;

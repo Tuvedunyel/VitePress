@@ -1,4 +1,4 @@
-@use '../abstracts';
+@use '../abstracts' as var;
 
 main {
   display: flex;
@@ -12,10 +12,18 @@ main {
 
 .posts-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(var(--n, 1), 1fr);
   gap: 3rem;
   justify-items: center;
   align-items: start;
+
+  @include var.media(var.$small) {
+    --n: 2;
+  }
+
+  @include var.media(var.$medium) {
+    --n: 3;
+  }
 }
 
 .card {

@@ -18,7 +18,7 @@
   }
 }
 
-@include var.mediaquery(1024px) {
+@include var.media(1024px) {
   .site-header__top-menu {
     display: flex;
     justify-content: flex-end;
@@ -35,7 +35,7 @@
   }
 }
 
-@include var.mediaquery(var(--large)) {
+@include var.media(var(--large)) {
   .site-header__top-menu .menu-item > a {
     padding: 4px 25px;
     font-size: 1.6rem;

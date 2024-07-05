@@ -51,7 +51,7 @@
   }
 }
 
-@include var.mediaquery(1300px) {
+@include var.media(1300px) {
   .menu-toggler {
     display: none;
   }

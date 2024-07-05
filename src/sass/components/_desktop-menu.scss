@@ -4,7 +4,7 @@
   display: none;
 }
 
-@include var.mediaquery(1300px) {
+@include var.media(1300px) {
   .header__nav {
     width: auto;
 
@@ -230,7 +230,7 @@
   }
 }
 
-@include var.mediaquery(var(--large)) {
+@include var.media(var(--large)) {
   .header__nav {
     width: auto;
   }
