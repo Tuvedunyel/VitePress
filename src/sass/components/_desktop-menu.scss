@@ -65,7 +65,7 @@
     height: 0;
     border-style: solid;
     border-width: 0 10px 10px 10px;
-    border-color: transparent transparent var(--purple) transparent;
+    border-color: transparent transparent var(--primary-variant) transparent;
   }
 
   .header__nav > .menu-item-has-children > a::after {
@@ -110,7 +110,7 @@
     right: -40px;
 
     width: 290px;
-    background-color: var(--purple);
+    background-color: var(--prrimary-variant);
 
     padding: 15px 10px;
   }
@@ -126,7 +126,7 @@
     padding: 5px 15px;
     box-sizing: border-box;
 
-    color: var(--primary);
+    color: var(--default);
     font-size: 1.5rem;
 
     &:hover,
@@ -171,7 +171,7 @@
 
     a {
       width: fit-content;
-      color: var(--primary);
+      color: var(--default);
       font-size: 1.6rem;
       font-weight: 400;
 
@@ -204,7 +204,7 @@
         }
 
         &.rouge {
-          background: var(--red);
+          background: var(--secondary);
         }
       }
 

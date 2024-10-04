@@ -156,12 +156,12 @@ ul {
 
 ::-moz-selection {
   color: var(--background);
-  background-color: var(--purple);
+  background-color: var(--primary-variant);
 }
 
 ::selection {
   color: var(--background);
-  background-color: var(--purple);
+  background-color: var(--primary-variant);
 }
 
 /* Set font-family, base font-size and line-height */
@@ -180,15 +180,15 @@ h1 {
 }
 
 h2 {
-  color: var(--purple);
+  color: var(--primary-variant);
 }
 
 h3 {
-  color: var(--blue);
+  color: var(--primary);
 }
 
 h4 {
-  color: var(--red);
+  color: var(--secondary);
 }
 
 h5 {
@@ -197,12 +197,12 @@ h5 {
 
 a {
   color: var(--primary);
-  background: var(--gray);
+  background: var(--background);
   border-radius: 24px;
   padding: 0.5rem 1rem;
   text-decoration: none;
 }
 
 p {
-  color: var(--secondary);
+  color: var(--default);
 }

@@ -20,6 +20,6 @@
 
   $tribu = new TribuVite();
 
-  $tribu->declare_options_page($acf_options_page);
+  // $tribu->declare_options_page($acf_options_page);
 
 

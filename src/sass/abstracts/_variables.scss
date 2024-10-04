@@ -1,21 +1,24 @@
+:root {
+  --text-size: 1.6rem;
+  --text-small: 1.2rem;
+}
+
 body {
-  --background: #0f172a;
-  --primary: #f8fafc;
-  --secondary: #94a3b8;
-  --purple: #818cf8;
-  --blue: #0ea5e9;
-  --red: #f472b6;
-  --dark-blue: #3b82f6;
-  --gray: #64748b;
+  --primary: #bb86fc;
+  --primary-variant: #3700b3;
+  --secondary: #03dac6;
+  --secondary-variant: #03dac6;
+  --background: #121212;
+  --default: white;
 }
 
 body.light {
-  --background: #e7e8ed;
-  --primary: #0f172a;
-  --secondary: #64748b;
-  --purple: #6366f1;
-  --red: #ec4899;
-  --gray: #f1f5f9;
+  --primary: #6200ee;
+  --primary-variant: #3700b3;
+  --secondary: #03dac6;
+  --secondary-variant: #018786;
+  --background: #ffffff;
+  --default: black;
 }
 
 $xsmall: 620px;

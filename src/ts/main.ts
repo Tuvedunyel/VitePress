@@ -22,12 +22,8 @@ icon.forEach((i) => {
 })
 const otherThemes = document.querySelector('.other-themes')
 
-themeSection?.addEventListener('mouseover', () => {
-  otherThemes?.classList.add('show')
-})
-
-themeSection?.addEventListener('mouseleave', () => {
-  otherThemes?.classList.remove('show')
+themeSection?.addEventListener('click', () => {
+  otherThemes?.classList.toggle('show')
 })
 
 const otherThemeSelector: NodeListOf<HTMLLIElement> =
