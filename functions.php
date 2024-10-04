@@ -1,19 +1,25 @@
 <?php
+/*
+* There's no need to add anything in this file. If you do so, you are doing it wrong. Just go to inc/inc.vite.php and edit the TribuVite class.
+*/
+
   if ( ! defined( 'ABSPATH' ) ) {
     exit;
   }
 
-  require_once 'includes/admin-handler.php';
-  require_once 'includes/tiny-mce-handler.php';
-  require_once 'includes/utility-functions.php';
-
-
   define( 'IS_VITE_DEVELOPMENT', true );
 
+  $acf_options_page = array (
+    array(
+      'name' => 'OptionTribu',
+      'icon_url' => 'dashicons-admin-generic'
+    )
+  );
+
   include "inc/inc.vite.php";
-  add_theme_support( 'post-thumbnails' );
-  add_theme_support( 'title-tag' );
 
-  add_filter( 'show_admin_bar', '__return_false' );
+  $tribu = new TribuVite();
 
-  add_filter( 'wpcf7_autop_or_not', '__return_false' );
+  $tribu->declare_options_page($acf_options_page);
+
+
