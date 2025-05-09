@@ -15,6 +15,7 @@ class Lightbox {
     )
 
     const gallery = links.map((link) => {
+
       return {
         url: link.getAttribute('href')!,
         title: link.getAttribute('title')!,
